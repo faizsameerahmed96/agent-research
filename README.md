@@ -1,5 +1,21 @@
 # Research Agent
 
+## Learning
+- Playwright toolkit not good for multiple browser invocations
+- Agent definition is invoked multiple times until it terminates
+  ```
+    agent = (
+        {
+            "research_topic": lambda x: x["research_topic"],
+            "agent_scratchpad": agent_scratchpad_formatter,
+        }
+        | research_prompt
+        | llm
+        | OpenAIToolsAgentOutputParser() # This gets the output from the OpenAI api call and gets the tool invocations from it. This then is executed by the AgentExecutor.
+    )
+  ```
+- 
+
 ### With single LLM - GPT-4o
 - We get good responses
 - Follows commands when asked to search for more sources 
