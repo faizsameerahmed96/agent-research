@@ -9,3 +9,7 @@
 
 ### Langfuse
 - Get idea of how the chain ran and how the agent thinks
+
+
+### The flow
+- We keep reiterating over the agent loop. We might need to make web browsing into it's own agent.
