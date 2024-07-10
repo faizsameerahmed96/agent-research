@@ -31,3 +31,7 @@
 - We keep reiterating over the agent loop. We might need to make web browsing into it's own agent.
 
 ### Human in Loop
+
+
+### Vector Store
+- We need to chunk documents
